@@ -20,5 +20,17 @@
 
 
 <p>
-  <img src="<%= @item.image_url %>">
+  <!-- <img src="<%= @item.image_url %>"> -->
+  <%= image_tag @item.image_url %>
 </p>
+
+<p>
+
+<%= link_to "編集", edit_item_path(@item) %>
+<%= link_to "削除", item_path(@item), method: :delete %>
+
+<!-- <a href="<%= edit_item_path(@item) %>">編集</a>
+
+<a href="<%= item_path(@item) %>" data-method="delete" >削除</a> -->
+
+<p>
