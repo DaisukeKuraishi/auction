@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   # For
-  deget '/items/:id' => 'items#show'
-  
+  get "/items" => "items#index"
+
+  get '/items/:id' => 'items#show'
+
+
+
 end
